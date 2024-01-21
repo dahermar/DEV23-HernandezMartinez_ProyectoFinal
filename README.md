@@ -3,7 +3,7 @@
 
 
 
-# DEV23-HernandezMartinez
+# DEV23-HernandezMartinez_ProyectoFinal
 
 
 
@@ -50,12 +50,9 @@ Como la estética será futurista, todo el contenido gráfico será fiel a esta 
 El juego no cuenta con sonido ambiente ni banda sonora, pero cuenta con varios efectos de sonido:
 - **Disparo:** Se reproduce cuando el personaje o los enemigos disparan. El sonido es distinto para cada tipo de arma.
 - **Sin munición:** Sonido que produce el cerrojo del fusil de asalto al intentar disparar sin munición.
-- **Daño:**: Se reproduce cuando el personaje recibe daño.
-- **Muerte**: Se reproduce cuando el personaje muere.
 - **Pasos** Sonido que se produce al andar sin ir agachado. Está coordinado con cada paso que da el personaje.
 - **Gafas de visión nocturna:**: Se activa al ponerse o quitarse la gafas de visión nocturna.
 - **Distracción**: Sonido que se reproduce en el lugar objetivo cuando el jugador utiliza el poder de distracción.
-- **Granada:** Sonido que se escucha al detonar una granada de fragmentación.
 
 #### Iluminación
 El juego transcurre de noche, con muy escasa iluminación natural. Tanto en las zonas interiores como exteriores, hay una serie de luces que iluminan el escenario. Estas luces pueden ser encendidas y apagadas con un interruptor. Esta iluminación, además de permitir al jugador observar mejor el entorno, influye en la jugabilidad. En caso de que el jugador se encuentre en una zona iluminada, le será más fácil a los enemigos poder detectar y disparar al jugador. Debido a ello, encontrar los interruptores que apagan las luces es una buena idea para completar la zona. Pero apagar las luces elimina prácticamente la totalidad de la iluminación, haciendo muy difícil al jugador poder avanzar por el nivel. Para ello, el protagonista cuenta con unas gafas de visión nocturna, las cuales le permiten poder ver en la oscuridad.
@@ -110,8 +107,6 @@ El jugador cuenta con una serie de mecánicas que le permiten interactuar con el
 
 - **Ejecución:** El jugador puede ejecutar sigilosamente a los enemigos por la espalda.
 
-- **Lanzar granada:** El jugador puede lanzar una granada que elimine a los enemigos cercanos al presionar la tecla "G".
-
 - **Interactuar:** El jugador puede interactuar con distintos elementos del entorno al presionar la tecla "E" mientras los mire y está a su alcance. En esta práctica, el jugador puede interactuar con dos elementos:
 	- **Cajas de munición:** Permiten al jugador obtener más balas del fusil de asalto.
 	- **Interruptores:** Permiten al jugador encender o apagar las luces de la sala.
@@ -124,7 +119,6 @@ El jugador cuenta con una serie de mecánicas que le permiten interactuar con el
 	- **Tecla 3:** Equipa el poder de la invisibilidad.
 	- **Tecla 4:** Equipa el poder de la distracción.
 	- **Tecla 5:** Equipa el poder de la telequinesis.
-	- **Tecla 6:** Equipa el poder del silencio.
 
 ### Contenido
 En esta sección se hablará del contenido más relevante del juego.
@@ -144,12 +138,7 @@ El jugador cuenta con dos armas que puede intercambiar con los botones del tecla
 El jugador cuenta con una serie de poderes que le permiten interactuar con el entorno. Se cambia entre poderes con la tecla correspondiente de cada uno y se lanzan con la tecla "Q". Todos tienen un tiempo de enfriamiento entre usos, distinto para cada poder. Los poderes son los siguientes:
 - **Invisibilidad:** Permiten al jugador volverse invisible durante 5 segundos, evitando ser detectado por los enemigos. Si efectúa una acción que emite un sonido, este puede seguir siendo escuchado por los enemigos.
 - **Distracción:** El jugador emite un sonido en el lugar que esté apuntando con la mira, haciendo que los enemigos cercanos vayan a investigarlo.
-- **Telequinesis:** Permite al jugador interactuar con ciertos elementos interactivos del escenario. Esto le permite, por ejemplo, tirar obstáculos sobre los enemigos para eliminarlos sigilosamente.
-- **Silencio:** Permite al jugador andar sin hacer ruido durante 5 segundos sin la necesidad de estar agachado. Además, durante este tiempo, pude disparar el fusil una vez sin hacer ruido. Pero debido al esfuerzo que supone suprimir un sonido tan alto, tras disparar la primera bala, el efecto se desactiva.
-
-#### Granadas
-
-El jugador puede utilizar granadas para eliminar a los enemigos que se encuentren en sus proximidades. La explosión emite un ruido que pueden escuchar los enemigos cercanos.
+- **Telequinesis:** Permite al jugador interactuar con ciertos elementos interactivos del escenario. Esto le permite, por ejemplo, tirar obstáculos sobre los enemigos p
 
 #### Enemigos
 
@@ -246,11 +235,10 @@ A lo largo del desarrollo se han realizado las siguientes tareas:
 | ✓ | Mecánica: Telequinesis
 | ✓ | Mecánica: Headshot
 | ✓ | Mecánica: Sonido de los pasos
-|  | Mecánica: Granada
-|  | Mecánica: Jefe final
-|  | Diseño: Primer nivel
-|  | Diseño: Segundo nivel
-|  | Diseño: Sala final
+| ✓ | Mecánica: Jefe final
+| ✓ | Diseño: Primer nivel
+| ✓ | Diseño: Segundo nivel
+| ✓ | Diseño: Sala final
 
 Lista de mecánicas implementadas:
 - [x] Mecánica: Fusil de asalto
@@ -268,8 +256,7 @@ Lista de mecánicas implementadas:
 - [x] Mecánica: Telequinesis
 - [x] Mecánica: Headshot
 - [x] Mecánica: Sonido de los pasos
-- [ ] Mecánica: Granada
-- [ ] Mecánica: Jefe final
+- [x] Mecánica: Jefe final
 
 Las clases principales que se desarrollarán son las siguientes: (Definir cuando el juego esté terminado)
 
