@@ -3,6 +3,7 @@
 
 
 
+
 # DEV23-HernandezMartinez_ProyectoFinal
 
 
@@ -12,7 +13,7 @@
 Este proyecto corresponde a la práctica final de la asignatura Desarrollo de Videojuegos del máster en Ingeniería Informática. La práctica consiste en un Third Person Shooter con elementos tácticos, interactuación con objetos y HUD. En un mundo dominado por una maligna empresa de androides, nuestro protagonista robot es el único capaz de frenar una nueva amenaza para la humanidad: el último modelo de soldado androide gigante. Colándose en la sala de investigación de la base de operaciones de la corporación, debe eliminar al nuevo androide con el fin de prevenir un nuevo desastre. El juego fue creado por Daniel Hernández Martínez. Parte de la base de la tercera práctica de la asignatura, ofreciendo cambios y añadidos a la misma. El objetivo es centrar el juego en el sigilo, penalizando el uso de la fuerza bruta y forzando al jugador a idear una táctica antes de avanzar por el nivel. Par ello, el protagonista cuenta con una serie de poderes que le serán de gran ayuda para pasar desapercibido. Además se centra también en la implementación y uso de animaciones. El proyecto cuenta con un vídeo explicativo con el resultado final del juego que complementa esta documentación: [Demo final]()
 
 ## Instalación y uso
-Para poder ejecutar el proyecto se debe descargar este repositorio y añadir a la carpeta Content las carpetas que aparecen en el siguiente enlace de Google drive: [Contenido extra]().
+Para poder ejecutar el proyecto se debe descargar este repositorio y añadir a la carpeta Content las carpetas que aparecen dentro de la carpeta DEV23-HernandezMartinez_ProyectoFinal del siguiente enlace de Google drive: [Contenido extra]().
 
 El juego se puede ejecutar tanto en Unreal Engine como mediante el ejecutable publicado en releases.
 
@@ -29,16 +30,20 @@ El diseño cuenta con estas secciones:
 - [Contenido](#Contenido)
   * [Protagonista](#Protagonista)
   * [Armas](#Armas)
-  * [Enemigos](#Enemigos)
   * [Poderes](#Poderes)
+  * [Enemigos](#Enemigos)
+  * [Prototipo de androide soldado gigante](#Jefe)
   * [Pasillos](#Pasillos)
   * [Puertas](#Puertas)
   * [Luces](#Luces)
   * [Gafas de visión nocturna](#Gafas)
+  * [Munición](#Munición)
+  *  [Puntos de patrullaje](#Patrullaje)
+  *  [Elementos interactivos](#Interactivos)
+  *  [Caja contundente](#Contundente)
   * [Prototipo de androide](#Prototipo)
   * [HUD](#HUD)
-- [Salas](#Salas)
-- [Niveles de dificultad](#Niveles)
+- [Escenario](#Escenario)
 
 ### Estética
 Para realizar el juego se ha utilizado una estética futurista, ambientada en un laboratorio de investigación de androides donde trascurre la acción. Para llevar a cabo el proyecto se utiliza el contenido de la plantilla First Person, el Starter Content, la biblioteca Megascans, [Animation Starter Pack](https://www.unrealengine.com/marketplace/en-US/product/animation-starter-pack), [Modular SciFi Season 1 Starter Bundle](https://www.unrealengine.com/marketplace/en-US/product/modular-scifi-season-1-starter-bundle), [Modular Scifi Season 2 Starter Bundle](https://www.unrealengine.com/marketplace/en-US/product/modular-scifi-season-2-starter-bundle), [Infinity Blade: Effects](https://www.unrealengine.com/marketplace/en-US/product/infinity-blade-effects?sessionInvalidated=true) y [FPS Weapon Bundle](https://www.unrealengine.com/marketplace/en-US/product/fps-weapon-bundle). Estos últimos 5 contenidos se pueden encontrar gratuitamente en la tienda de Unreal Engine. Junto a estos elementos, puede aparecer contenido descargado de Internet y que sea ajeno a las fuentes definidas previamente. Este puede ser el caso de ciertos modelos o efectos de sonido. Todo este contenido se encontrará en la carpeta compartida en Google Drive. 
@@ -184,9 +189,9 @@ Permiten al jugador ver en la oscuridad.
 
 Cuando el jugador interactúa con este objeto, obtiene munición para el fusil de asalto.
 
-#### Puntos de control
+#### Puntos de patrullaje
 
-Puntos de control sobre los que reaparece el jugador al morir si han sido activados.
+Indican a los enemigo el camino a seguir al patrullar.
 
 #### Elementos interactivos
 
@@ -272,20 +277,26 @@ classDiagram
       Character <|-- BP_FirstPersonCharacter
       
       Character <|-- BP_EnemyAndroid
+      Character <|-- BP_FinalBoss
 
       Actor <|-- HUD
       HUD<|-- FirstPersonHUD
       
       Actor <|-- BP_AmmoCrate
-      Actor <|-- BP_AndroidPrototype
-      Actor <|-- BP_EnemyGenerator
       Actor <|-- BP_InteractiveLight
       Actor <|-- BP_LightSwitch
-      Actor <|-- BP_AndroidPrototype
       Actor <|-- BP_AndroidWeapon_Component
       Actor <|-- BP_AssaultRifle_Bullet
       Actor <|-- BP_PulseRifle_Bullet
-      Actor <|-- BP_AndroidPrototype
+      Actor <|-- BP_PathPoint
+      Actor <|-- BP_SpawnPoint
+      Actor <|-- BP_DefaultDangerObject
+      Actor <|-- BP_DefaultTelekinesisActor
+      Actor <|-- BP_DoorKey
+      Actor <|-- BP_LevelEndCollider
+      Actor <|-- BP_LightCollisionBox
+      Actor <|-- BP_SpawnPoint
+      
 	  
 	  BP_LightSwitch <|-- BP_LaboratoryLight
 	  BP_LightSwitch <|-- BP_PortableLight
@@ -318,6 +329,7 @@ Inspiración a la hora de crear el juego:
 - **The Last of Us**, Naughty Dog. Inspiración en poder pasar los niveles sigilosamente sin necesidad de acabar con los enemigos.
 - **Splinter Cell**, Ubisoft. Inspiración en el uso de las gafas de visión nocturna para ver en la oscuridad.
 - **Yo robot**. Inspiración de la estética y mundo.
+- **Assassin's Creed**. Inspiración en las ejecuciones sigilosas.
 
 Plantilla de Unreal Engine utilizada: [First Person Template](https://docs.unrealengine.com/5.2/en-US/first-person-template-in-unreal-engine/)
 
