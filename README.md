@@ -212,11 +212,21 @@ El juego cuenta con un HUD en el que se muestra la siguiente información:
 
 ### Escenario
 
-El juego está dividido en dos niveles, los cuales cuentan con diversas salas llenas de enemigos. Se cambia entre un nivel y otro al llegar a la puerta final del nivel. Estas salas cuentan con todos los elementos descritos anteriormente. Al final del último nivel se encuentra la sala del jefe final.
+El juego está dividido en tres niveles.
 
-A continuación se muestran imágenes cenitales del escenario:
+El primer nivel sucede en un edificio en una zona montañosa helada. El objetivo es escapar. Para ello, hay que encontrar la tarjeta que permite abrir la puerta de salida. El nivel tiene distintas salas que explorar. Existe una serie de enemigos que patrullan las salas. Este nivel sucede durante el día, por lo que los enemigos tienen rango de visión completo.
 
-Introducir imágenes
+![image](https://github.com/dahermar/DEV23-HernandezMartinez_ProyectoFinal/assets/60484187/622183a7-598e-4d76-94fd-8f90a7628a25)
+
+El segundo nivel sucede en las instalaciones del laboratorio. Estas instalaciones son lineales, por lo que el objetivo es llegar al final y escapar. Hay una serie de enemigos patrullando la zona. El nivel sucede de noche, por lo que el jugador puede utilizar el sistema de luces implementado en el juego para no ser detectado.
+
+![image](https://github.com/dahermar/DEV23-HernandezMartinez_ProyectoFinal/assets/60484187/b7e976a2-bac2-4550-a39a-9d931d508181)
+
+El último nivel es la sala del boss. El jugador deberá llegar sigilosamente hasta el final para poder atacar al robot gigante en su punto débil. Este nivel ocurre de noche, pero está completamente iluminado y no se pueden apagar las luces, por lo que los enemigos cuentan con rango de visión completo.
+
+![image](https://github.com/dahermar/DEV23-HernandezMartinez_ProyectoFinal/assets/60484187/88caf84d-3552-46df-94d2-9875f3062a3a)
+
+
 
 
 ## Producción
@@ -263,7 +273,7 @@ Lista de mecánicas implementadas:
 - [x] Mecánica: Sonido de los pasos
 - [x] Mecánica: Jefe final
 
-Las clases principales que se desarrollarán son las siguientes: (Definir cuando el juego esté terminado)
+Las principales clases desarrolladas son las siguientes:
 
 ```mermaid
 classDiagram
