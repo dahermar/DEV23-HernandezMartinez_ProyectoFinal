@@ -10,7 +10,7 @@
 
 # Desarrollo de Videojuegos - Práctica Final
 
-Este proyecto corresponde a la práctica final de la asignatura Desarrollo de Videojuegos del máster en Ingeniería Informática. La práctica consiste en un Third Person Shooter con elementos tácticos, interactuación con objetos y HUD. En un mundo dominado por una maligna empresa de androides, nuestro protagonista robot es el único capaz de frenar una nueva amenaza para la humanidad: el último modelo de soldado androide gigante. Colándose en la sala de investigación de la base de operaciones de la corporación, debe eliminar al nuevo androide con el fin de prevenir un nuevo desastre. El juego fue creado por Daniel Hernández Martínez. Parte de la base de la tercera práctica de la asignatura, ofreciendo cambios y añadidos a la misma. El objetivo es centrar el juego en el sigilo, penalizando el uso de la fuerza bruta y forzando al jugador a idear una táctica antes de avanzar por el nivel. Par ello, el protagonista cuenta con una serie de poderes que le serán de gran ayuda para pasar desapercibido. Además se centra también en la implementación y uso de animaciones. El proyecto cuenta con un vídeo explicativo con el resultado final del juego que complementa esta documentación: [Demo final]()
+Este proyecto corresponde a la práctica final de la asignatura Desarrollo de Videojuegos del máster en Ingeniería Informática. La práctica consiste en un Third Person Shooter con elementos tácticos, interactuación con objetos y HUD. En un mundo dominado por una maligna empresa de androides, nuestro protagonista robot es el único capaz de frenar una nueva amenaza para la humanidad: el último modelo de soldado androide gigante. Colándose en la sala de investigación de la base de operaciones de la corporación, debe eliminar al nuevo androide con el fin de prevenir un nuevo desastre. El juego fue creado por Daniel Hernández Martínez. Parte de la base de la tercera práctica de la asignatura, ofreciendo cambios y añadidos a la misma. El objetivo es centrar el juego en el sigilo, penalizando el uso de la fuerza bruta y forzando al jugador a idear una táctica antes de avanzar por el nivel. Par ello, el protagonista cuenta con una serie de poderes que le serán de gran ayuda para pasar desapercibido. Además se centra también en la implementación y uso de animaciones. El proyecto cuenta con un vídeo explicativo con el resultado final del juego que complementa esta documentación: [Demo final](https://youtu.be/5xqfGhSiGk0)
 
 ## Instalación y uso
 Para poder ejecutar el proyecto se debe descargar este repositorio y añadir a la carpeta Content las carpetas que aparecen dentro de la carpeta DEV23-HernandezMartinez_ProyectoFinal del siguiente enlace de Google drive: [Contenido extra](https://drive.google.com/file/d/1iZykGiYzNrMlfHsxb6fLVA6MSXW5tg26/view?usp=sharing).
@@ -323,7 +323,7 @@ classDiagram
 
 ## Posproducción
 
-Como posproducción se realizará un pulido final del juego. Se generará un ejecutable, el cual será subido al apartado de releases del repositorio. Además se generará un vídeo en el que se explique el comportamiento del juego: [Demo Práctica Final]()
+Como posproducción se realizará un pulido final del juego. Se generará un ejecutable, el cual será subido al apartado de releases del repositorio. Además se generará un vídeo en el que se explique el comportamiento del juego: [Demo Práctica Final](https://youtu.be/5xqfGhSiGk0)
 
 ## Licencia
 
