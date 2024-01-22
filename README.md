@@ -30,7 +30,7 @@ El diseño cuenta con estas secciones:
   * [Protagonista](#Protagonista)
   * [Armas](#Armas)
   * [Enemigos](#Enemigos)
-  * [Cabinas generadoras](#Cabinas)
+  * [Poderes](#Poderes)
   * [Pasillos](#Pasillos)
   * [Puertas](#Puertas)
   * [Luces](#Luces)
